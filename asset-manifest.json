@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.938351ed.chunk.css",
+    "main.js": "/static/js/main.3f8b2219.chunk.js",
+    "main.js.map": "/static/js/main.3f8b2219.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.7119e08b.chunk.js": "/static/js/2.7119e08b.chunk.js",
+    "static/js/2.7119e08b.chunk.js.map": "/static/js/2.7119e08b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.adfc886250641197ed9070b9a31fc6fe.js": "/precache-manifest.adfc886250641197ed9070b9a31fc6fe.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.938351ed.chunk.css.map": "/static/css/main.938351ed.chunk.css.map",
+    "static/media/cc-home-logo.png": "/static/media/cc-home-logo.cce91a02.png",
+    "static/media/about.css": "/static/media/data.28108bba.png",
+    "static/media/email-icon-symbol-vector.png": "/static/media/email-icon-symbol-vector.cd494855.png",
+    "static/media/email_decal.png": "/static/media/email_decal.2ac7d3c4.png",
+    "static/media/fortress_defenders.png": "/static/media/fortress_defenders.054aac95.png",
+    "static/media/jl_resume.pdf": "/static/media/jl_resume.e481ed8f.pdf",
+    "static/media/me.jpg": "/static/media/me.cc8f0cd2.jpg",
+    "static/media/mockChat.png": "/static/media/mockChat.793e55c0.png",
+    "static/media/mockItOff.png": "/static/media/mockItOff.63491d29.png",
+    "static/media/mockPong.png": "/static/media/mockPong.7988491e.png",
+    "static/media/mockipedia.png": "/static/media/mockipedia.b879e7ce.png",
+    "static/media/wheel.png": "/static/media/wheel.8989753f.png"
+  }
+}
