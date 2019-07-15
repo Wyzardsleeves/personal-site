@@ -1,5 +1,6 @@
 {
   "name": "new-portfolio",
+  "homepage": "https://wyzardsleeves.github.io/personal-site/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
