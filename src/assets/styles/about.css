@@ -1,0 +1,102 @@
+.text-background{
+  background-color: rgba(255,255,255, 0.65);
+}
+
+.about-stuff{
+  background: fixed;
+  background-image: url("../../assets/images/data.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  padding: 70px 0;
+}
+
+.text-background{
+  padding: 40px;
+  border: 2px dotted white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+}
+
+.about-stuff h4{
+  margin: 0 0 0.8rem 0;
+}
+
+.about-body h5{
+  margin: 0 0 0.8rem 0;
+}
+
+.about-image{
+  margin: 0 auto;
+  width: 30%;
+  display: inline-block;
+}
+
+.about-image img{
+  border-radius: 50%;
+  padding: 1rem;
+  width: 100%;
+  display: inline-block;
+}
+
+.about-body{
+  text-align: left;
+  width: 70%;
+  padding: 1rem;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-body p{
+  font-size: 18px;
+}
+
+.about-links{
+  text-align: right;
+}
+.about-links i{
+  font-size: 40px;
+  display: inline-block;
+  padding: 0 2rem 0 0;
+}
+
+.about-links a:hover i{
+  cursor: pointer;
+  color: orange;
+}
+
+@media (width < 700px) {
+  .about-image{
+    width: 80%;
+    display: block;
+  }
+
+  .about-body{
+    display: block;
+    width: 100%;
+    text-align:center;
+  }
+
+  .about-body h5{
+    font-size: 18px;
+
+  }
+
+  .about-body p{
+    font-size: 14px;
+  }
+
+  .about-links{
+    display: block;
+    width: 100%;
+    text-align:center;
+  }
+
+  .about-links i{
+    font-size: 30px;
+    display: inline-block;
+    padding: 0 1rem 0 0;
+  }
+}

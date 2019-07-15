@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+//included Components
+import Projects from './Components/Projects';
+import Youtube from './Components/Youtube';
+import Subhead from './Components/Subhead';
+import About from './Components/About';
+import HireMe from './Components/HireMe';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="subhead grey lighten-2">
+        <Subhead />
+      </div>
+      <div className="about grey lighten-3">
+        <About />
+      </div>
+      <div className="youtube grey darken-3">
+        <Youtube />
+      </div>
+      <div className="projects grey lighten-3">
+        <Projects />
+      </div>
+      <div className="hireme grey lighten-3">
+        <HireMe />
+      </div>
     </div>
   );
 }
