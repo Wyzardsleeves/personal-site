@@ -14,12 +14,12 @@ const projectList = [
     imgURL: fortressDefenders,
     projectURL: 'https://fortress-defenders.herokuapp.com/'
   },
-  {
+  /*{
     title: 'Crypto Central',
     description: 'React.js project using AJAX. Incorporated Firebase for a dynamic chat panel.',
     imgURL: cryptoCentral,
     projectURL: 'https://crypto-central-co.herokuapp.com/'
-  },
+  },*/
   {
     title: 'BarnesKing Tire Site',
     description: 'Contract work done for local tireshop. Fully responsive and included google map.',
