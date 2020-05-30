@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ddc9b34d838136ebf40fe054fd22c42",
+    "revision": "a4817658c0ffa2ee0909a32818263632",
     "url": "/personal-site/index.html"
   },
   {
-    "revision": "8add89f13ee0eb30b353",
+    "revision": "f8123b110688ae013aa3",
     "url": "/personal-site/static/css/main.2f336604.chunk.css"
   },
   {
-    "revision": "2b6b13da0dfef34200bd",
-    "url": "/personal-site/static/js/2.7119e08b.chunk.js"
+    "revision": "a20132634b871fbb38ca",
+    "url": "/personal-site/static/js/2.6da2b292.chunk.js"
   },
   {
-    "revision": "8add89f13ee0eb30b353",
-    "url": "/personal-site/static/js/main.9d6c1293.chunk.js"
+    "revision": "f8123b110688ae013aa3",
+    "url": "/personal-site/static/js/main.9f7c77dc.chunk.js"
   },
   {
     "revision": "d33cc63b615d83e32684",
     "url": "/personal-site/static/js/runtime~main.039145d2.js"
+  },
+  {
+    "revision": "0d34de28983f61f8960d04a1ff514d88",
+    "url": "/personal-site/static/media/Resume.0d34de28.pdf"
   },
   {
     "revision": "cce91a02768ebfdc93702b5a8f130f54",
@@ -40,20 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal-site/static/media/fortress_defenders.054aac95.png"
   },
   {
-    "revision": "e481ed8f728f7fd73a50e6b12993efb3",
-    "url": "/personal-site/static/media/jl_resume.e481ed8f.pdf"
-  },
-  {
     "revision": "cc8f0cd22e6f6e3e24ea6ad757449608",
     "url": "/personal-site/static/media/me.cc8f0cd2.jpg"
-  },
-  {
-    "revision": "793e55c05845b68b4d931df3d8468fce",
-    "url": "/personal-site/static/media/mockChat.793e55c0.png"
-  },
-  {
-    "revision": "63491d290304498f7b017e12f1890b45",
-    "url": "/personal-site/static/media/mockItOff.63491d29.png"
   },
   {
     "revision": "7988491e9a35283b4336df72b3766b21",
