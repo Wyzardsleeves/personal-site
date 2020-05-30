@@ -3,8 +3,6 @@ import email_icon_symbol_vector from '../assets/images/email-icon-symbol-vector.
 import cryptoCentral from '../assets/images/cc-home-logo.png';
 import fortressDefenders from '../assets/images/fortress_defenders.png';
 import mockPong from '../assets/images/mockPong.png';
-import mockItOff from '../assets/images/mockItOff.png';
-import mockChat from '../assets/images/mockChat.png';
 import mockipedia from '../assets/images/mockipedia.png';
 import psd1logo from '../assets/images/psd-1-logo.png';
 import wheel from '../assets/images/wheel.png';

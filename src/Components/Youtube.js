@@ -65,7 +65,7 @@ class Youtube extends Component{
             <ul>
               {this.state.data.slice(this.state.vidIndex, this.state.vidIndex + 4).map((item) =>
                 <li onClick={(e) => this.changeVid(e, item.snippet.resourceId.videoId)} title={`${item.snippet.title}: ${item.snippet.description}`}>
-                  <img src={item.snippet.thumbnails.medium.url} />
+                  <img alt="youtube" src={item.snippet.thumbnails.medium.url} />
                   <h5 className="grey-text">{this.clipText(17, item.snippet.title)}</h5>
                 </li>
               )}

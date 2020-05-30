@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="project-list">
           <table className="card-panel grey-lighten-4">
             <tbody>
-              <a target="_blank" href={proj.projectURL}>
+              <a target="_blank" rel="noopener noreferrer" href={proj.projectURL}>
                 <tr>
                   <td width="30%" className="project-thumb">
                     <img src={proj.imgURL} alt="project.png" />
