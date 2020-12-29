@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.938351ed.chunk.css",
     "main.js": "/static/js/main.3f8b2219.chunk.js",
     "main.js.map": "/static/js/main.3f8b2219.chunk.js.map",
@@ -23,5 +24,28 @@
     "static/media/mockPong.png": "/static/media/mockPong.7988491e.png",
     "static/media/mockipedia.png": "/static/media/mockipedia.b879e7ce.png",
     "static/media/wheel.png": "/static/media/wheel.8989753f.png"
+=======
+    "main.css": "/personal-site/static/css/main.2f336604.chunk.css",
+    "main.js": "/personal-site/static/js/main.4800ceee.chunk.js",
+    "main.js.map": "/personal-site/static/js/main.4800ceee.chunk.js.map",
+    "runtime~main.js": "/personal-site/static/js/runtime~main.039145d2.js",
+    "runtime~main.js.map": "/personal-site/static/js/runtime~main.039145d2.js.map",
+    "static/js/2.a25dd93f.chunk.js": "/personal-site/static/js/2.a25dd93f.chunk.js",
+    "static/js/2.a25dd93f.chunk.js.map": "/personal-site/static/js/2.a25dd93f.chunk.js.map",
+    "index.html": "/personal-site/index.html",
+    "precache-manifest.1ab88230129dbc7f77c267ed5f51d6c6.js": "/personal-site/precache-manifest.1ab88230129dbc7f77c267ed5f51d6c6.js",
+    "service-worker.js": "/personal-site/service-worker.js",
+    "static/css/main.2f336604.chunk.css.map": "/personal-site/static/css/main.2f336604.chunk.css.map",
+    "static/media/Resume.pdf": "/personal-site/static/media/Resume.f3e736d9.pdf",
+    "static/media/cc-home-logo.png": "/personal-site/static/media/cc-home-logo.cce91a02.png",
+    "static/media/about.css": "/personal-site/static/media/data.28108bba.png",
+    "static/media/email-icon-symbol-vector.png": "/personal-site/static/media/email-icon-symbol-vector.cd494855.png",
+    "static/media/email_decal.png": "/personal-site/static/media/email_decal.2ac7d3c4.png",
+    "static/media/fortress_defenders.png": "/personal-site/static/media/fortress_defenders.054aac95.png",
+    "static/media/me.jpg": "/personal-site/static/media/me.cc8f0cd2.jpg",
+    "static/media/mockPong.png": "/personal-site/static/media/mockPong.7988491e.png",
+    "static/media/mockipedia.png": "/personal-site/static/media/mockipedia.b879e7ce.png",
+    "static/media/wheel.png": "/personal-site/static/media/wheel.8989753f.png"
+>>>>>>> 08c66c4e6796c0a679481baa7dcf559a6ccd9cc8
   }
 }
