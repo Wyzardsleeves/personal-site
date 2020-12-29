@@ -20,9 +20,9 @@ function App() {
       <div className="youtube grey darken-3">
         <Youtube />
       </div>
-      <div className="projects grey lighten-3">
+      {/* <div className="projects grey lighten-3">
         <Projects />
-      </div>
+      </div> */}
       <div className="hireme grey lighten-3">
         <HireMe />
       </div>
