@@ -22,7 +22,7 @@ function App() {
       </div>
       {/* <div className="projects grey lighten-3">
         <Projects />
-      </div> */}
+      </div>efawsed */}
       <div className="hireme grey lighten-3">
         <HireMe />
       </div>
