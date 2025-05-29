@@ -1,4 +1,3 @@
-import React from 'react';
 import icon from '../assets/images/justin_the_dev_scrap.png';
 import '../assets/styles/subhead.css';
 

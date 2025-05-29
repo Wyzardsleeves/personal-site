@@ -12,16 +12,21 @@ const About = () => {
             <img src={me} alt="about" />
           </div>
           <div className="about-body">
-            <h5 className="">Justin Lattimore</h5>
-            <p className=""><strong>Hi, I'm a Web Developer with a 3D and Graphic Design background. I'm well versed in HTML, CSS, ReactJS, Rails and Node. As a product-oriented individual, I focus on getting results first. I have an unconventional entry into this industry because I knew that developing applications for the web is what I wanted to do after meeting some engineers at a Unity Meetup. </strong></p><br/>
-            <p><strong>I bring a youthful growth mindset and eagerness to use new skills and technologies. Feel free to check out my projects on my site or GitHub.</strong></p>
+            <h5>Justin Lattimore</h5>
+            <p>
+              <strong>
+                Hi, I'm a Web Developer with a 3D and Graphic Design background. I'm well versed in HTML, CSS, ReactJS, Rails and Node. As a product-oriented individual, I focus on getting results first. I have an unconventional entry into this industry because I knew that developing applications for the web is what I wanted to do after meeting some engineers at a Unity Meetup.
+              </strong>
+            </p>
+            <br/>
+            <p>
+              <strong>I bring a youthful growth mindset and eagerness to use new skills and technologies. Feel free to check out my projects on my site or GitHub.</strong>
+            </p>
           </div>
           <div className="about-links">
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCLn0jCRt_zJfsMhR1WFswzw"><i className="fab fa-youtube"></i></a>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Wyzardsleeves"><i className="fab fa-github"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justin-lattimore-90387445"><i className="fab fa-linkedin"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/JustintheDev1"><i className="fab fa-twitter"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/justinlattimore/"><i className="fab fa-instagram"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justin-lattimore"><i className="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
