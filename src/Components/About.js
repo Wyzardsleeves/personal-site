@@ -15,13 +15,10 @@ const About = () => {
             <h5>Justin Lattimore</h5>
             <p>
               <strong>
-                Hi, I'm a Web Developer with a 3D and Graphic Design background. I'm well versed in HTML, CSS, ReactJS, Rails and Node. As a product-oriented individual, I focus on getting results first. I have an unconventional entry into this industry because I knew that developing applications for the web is what I wanted to do after meeting some engineers at a Unity Meetup.
+                Hi, I'm a full-stack Web Developer with a strong command of modern web technologies, including React.js, Redux, Ruby on Rails, JavaScript (ES6), and HTML/CSS. I’ve contributed to projects across government, real estate, and cybersecurity sectors, delivering scalable, accessible, and user-focused solutions. From building secure API integrations and automating internal workflows to architecting full-stack applications and developing custom UI components, I bring a results-driven approach to every project I take on.
               </strong>
             </p>
             <br/>
-            <p>
-              <strong>I bring a youthful growth mindset and eagerness to use new skills and technologies. Feel free to check out my projects on my site or GitHub.</strong>
-            </p>
           </div>
           <div className="about-links">
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCLn0jCRt_zJfsMhR1WFswzw"><i className="fab fa-youtube"></i></a>
