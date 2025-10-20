@@ -1,5 +1,5 @@
 import '../assets/styles/hireme.css';
-import resumePdf from '../assets/files/Resume.pdf';
+import resumePdf from '../assets/files/JL_Resume_08_31_2025.pdf';
 
 const HireMe = () => {
   return(
