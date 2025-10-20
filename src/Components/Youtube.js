@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import '../assets/styles/youtube.css';
 import axios from 'axios';
 
-const YOUTUBE_KEY = process.env.REACT_APP_YOUTUBE_KEY;
+//const YOUTUBE_KEY = process.env.REACT_APP_YOUTUBE_KEY;
 
 const Youtube = () => {
 
   const [data, setData] = useState([]);
   const [vidIndex, setVidIndex] = useState(0);
-  const [selectedURL, setSelectedURL] = useState('b8LAYwuuQj8');
+  const [selectedURL, setSelectedURL] = useState('_b7sMyXkrNI');
 
   const playListId = 'PL2QHmzDw4DXzDXdYQkm8qS8EZ39thBElN';
   const maxResults = 20;
@@ -18,7 +18,7 @@ const Youtube = () => {
   }, [])
 
   const getData = () => {
-    axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${playListId}&key=${YOUTUBE_KEY}`)
+    axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${playListId}&key=${'AIzaSyCKtZ3QLnakjbuDpfAl-i3vL_zQ_AehjX0'}`)
     .then((response) => setData(response.data.items))
     .catch((response) => console.log(response.message))
   }
