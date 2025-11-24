@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import '../assets/styles/youtube.css';
 import axios from 'axios';
 
 //const YOUTUBE_KEY = process.env.REACT_APP_YOUTUBE_KEY;
@@ -47,35 +46,105 @@ const Youtube = () => {
   }
 
   return(
-    <section>
+    <section className="min-h-screen py-20 px-6 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div className="max-w-7xl mx-auto">
 
-      <div className="youtube-stuff">
-        <div className="youtube-frame">
-          <div className='embed-container'>
-            <iframe title="videoWindow" src={`https://www.youtube.com/embed/${selectedURL}`}></iframe>
+        {/* Main Video Player */}
+        <div className="youtube-frame mb-12">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl backdrop-blur-xl bg-white/5 border border-gray-200/20 dark:border-white/10 transition-all duration-500 hover:shadow-[0_25px_80px_rgba(0,0,0,0.15)]">
+            <div className="relative w-full" style={{paddingBottom: '56.25%'}}>
+              <iframe
+                title="videoWindow"
+                src={`https://www.youtube.com/embed/${selectedURL}`}
+                className="absolute top-0 left-0 w-full h-full"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
-        <div className="youtube-thumbs-main">
-          <div className="container">
-            <h5 onClick={decreaseIndex}><i className="chev-vert fas fa-chevron-up"></i></h5>
+
+        {/* Video Thumbnails Gallery */}
+        <div className="youtube-thumbs-main relative">
+
+          {/* Top Navigation Button */}
+          <div className="flex justify-center mb-6 md:hidden">
+            <button
+              onClick={decreaseIndex}
+              disabled={vidIndex === 0}
+              className="w-12 h-12 rounded-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
+            >
+              <i className="fas fa-chevron-up text-gray-700 dark:text-gray-200"></i>
+            </button>
           </div>
-          <div className="side-piece">
-            <h5 className="chev-horz" ><i className="chev-horz fas fa-chevron-left" onClick={decreaseIndex}></i></h5>
+
+          <div className="flex items-center gap-4">
+
+            {/* Left Navigation Button */}
+            <button
+              onClick={decreaseIndex}
+              disabled={vidIndex === 0}
+              className="hidden md:flex w-14 h-14 items-center justify-center rounded-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 flex-shrink-0"
+            >
+              <i className="fas fa-chevron-left text-gray-700 dark:text-gray-200"></i>
+            </button>
+
+            {/* Thumbnails Grid */}
+            <div className="flex-1 overflow-hidden">
+              <ul className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {data.slice(vidIndex, vidIndex + 4).map((item, index) =>
+                  <li
+                    key={index}
+                    onClick={(e) => changeVid(e, item.snippet.resourceId.videoId)}
+                    title={`${item.snippet.title}: ${item.snippet.description}`}
+                    className="group cursor-pointer"
+                  >
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg backdrop-blur-xl bg-white dark:bg-gray-800 border border-gray-200/50 dark:border-gray-700/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                      <div className="relative aspect-video overflow-hidden">
+                        <img
+                          alt={item.snippet.title}
+                          src={item.snippet.thumbnails.medium.url}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center">
+                            <i className="fas fa-play text-gray-900 ml-1"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="p-3">
+                        <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300 line-clamp-2 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-200">
+                          {item.snippet.title}
+                        </h5>
+                      </div>
+                    </div>
+                  </li>
+                )}
+              </ul>
+            </div>
+
+            {/* Right Navigation Button */}
+            <button
+              onClick={increaseIndex}
+              disabled={vidIndex >= data.length - 4}
+              className="hidden md:flex w-14 h-14 items-center justify-center rounded-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 flex-shrink-0"
+            >
+              <i className="fas fa-chevron-right text-gray-700 dark:text-gray-200"></i>
+            </button>
+
           </div>
-          <ul>
-            {data.slice(vidIndex, vidIndex + 4).map((item) =>
-              <li onClick={(e) => changeVid(e, item.snippet.resourceId.videoId)} title={`${item.snippet.title}: ${item.snippet.description}`}>
-                <img alt="youtube" src={item.snippet.thumbnails.medium.url} />
-                <h5 className="grey-text">{clipText(17, item.snippet.title)}</h5>
-              </li>
-            )}
-          </ul>
-          <div className="side-piece">
-            <h5 className="chev-horz" onClick={increaseIndex}><i className="chev-horz fas fa-chevron-right"></i></h5>
+
+          {/* Bottom Navigation Button */}
+          <div className="flex justify-center mt-6 md:hidden">
+            <button
+              onClick={increaseIndex}
+              disabled={vidIndex >= data.length - 4}
+              className="w-12 h-12 rounded-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
+            >
+              <i className="fas fa-chevron-down text-gray-700 dark:text-gray-200"></i>
+            </button>
           </div>
-          <div className="container">
-            <h5 onClick={increaseIndex}><i className="chev-vert fas fa-chevron-down"></i></h5>
-          </div>
+
         </div>
       </div>
     </section>
